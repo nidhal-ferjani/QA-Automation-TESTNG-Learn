@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Listeners TestSuite">
+	<listeners>
+		<!-- <listener class-name="listenerspackage.CustomListener1"></listener> 
+			<listener class-name="listenerspackage.CustomListener2"></listener> <listener 
+			class-name="listenerspackage.CustomListener3"></listener> -->
+
+		<listener class-name="listenerspackage.CustomListener"></listener>
+	</listeners>
+
+	<test thread-count="5" name="Application Test1">
+		<classes>
+			<class name="testclasses.TestNG_ListenersTest1" />
+		</classes>
+	</test> <!-- Application Test1 -->
+	<test thread-count="5" name="Application Test2">
+		<classes>
+			<class name="testclasses.TestNG_ListenersTest2" />
+		</classes>
+	</test> <!-- Application Test2 -->
+</suite> <!-- Listeners TestSuite -->
